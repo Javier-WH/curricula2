@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --BG-Color: rgb(10, 33, 107);
+  --textColor: white;
+  --dropShadow: drop-shadow(0 0 0.1vw white);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#rectangle-background {
+  position: fixed;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--BG-Color);
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 53% 100%);
+  z-index: -1;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#rectangle-background2 {
+  /*position: fixed;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  opacity: 0.4;
+  background-size: 20px 20px;
+  background-image: repeating-linear-gradient(0deg, var(--BG-Color), var(--BG-Color) 2px, #fff 1px, #fff);
+  */
+
+}
+
+#name-container {
+  margin-top: 20px;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#name-subcontainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+#name-contact-container{
+  display: flex;
+  gap: 3vw;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#name {
+  color: var(--BG-Color);
+  font-size: max(2vw, 14px);
+  color: var(--textColor);
+  text-shadow: 0 0 1px var(--BG-Color),  0 0 1px var(--BG-Color), 0 0 1px var(--BG-Color), 0 0 1px var(--BG-Color), 0 0 1px var(--BG-Color);
+}
+
+#title {
+  font-size: max(1vw, 10px);
+  color: var(--textColor);
+  text-shadow: 0 0 1px var(--BG-Color),  0 0 1px var(--BG-Color), 0 0 1px var(--BG-Color), 0 0 1px var(--BG-Color), 0 0 1px var(--BG-Color);
+}
+
+#photo-container {
+  background-color: var(--BG-Color);
+  border: 0.3vw solid white;
+  border-radius: 50%;
+  width: 12vw;
+  height: auto;
+  min-width: 70px;
+  min-height: 70px;
+  margin-right: 2vw;
+  aspect-ratio: 1/1
+}
+
+#photo {
+  width: 100%;
+  border-radius: 50%;
+  filter: var(--dropShadow) var(--dropShadow);
+  
+
+}
+
+.cristal {
+  display: inline-block;
+  padding: 20px;
+  mix-blend-mode: difference;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+
+}
+#address-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  row-gap: 3vw;
+}
+.SVG-address-container{
   color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: max(1vw, 9px);
+  text-shadow: 0 0 1px var(--BG-Color),  0 0 1px var(--BG-Color), 0 0 1px var(--BG-Color), 0 0 1px var(--BG-Color), 0 0 1px var(--BG-Color);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SVG-ADDRESS-ICON{
+  width: 1.3vw;
+  height: auto;
+  fill: white;
+  min-width: 12px;
+  min-height: 12px;
+  filter: drop-shadow(0 0 1px var(--BG-Color)) drop-shadow(0 0 1px var(--BG-Color));
 }
