@@ -3,6 +3,8 @@
     top: 0;
     left: auto;
     right: auto;
+    margin-left: 0;
+    margin-right: 0;
     background-color: rgb(2, 70, 2);
     padding: 0.5vw;
     border-radius: 0.4vw;
@@ -11,6 +13,7 @@
     border: 0.1vw solid rgb(6, 214, 6);
     display: flex;
     align-items: center;
+    font-size: max(0.8vw, 7px);
 }
 
 .invisible{
@@ -19,6 +22,7 @@
 
 .copied-icon{
     width: 1.5vw;
-    height: 1.5vw;
+    height: auto;
+    max-width: 12px;
     margin-right: 1vw;
 }
