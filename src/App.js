@@ -2,6 +2,7 @@ import "./App.css";
 
 import NameContainer from "./modules/title/socket";
 import Body from "./modules/body/body";
+import TechList from "./modules/tech/tech";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <div id="rectangle-background"></div>
       <div id="rectangle-background2"></div>
       <NameContainer/>
+      <TechList/>
       <Body/>
     </div>
   );
