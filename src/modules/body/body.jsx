@@ -4,7 +4,7 @@ export default function Body() {
     return <div id="body-container">
 
         <section className="cristal">
-            <h3 className="section-title">CAREER OBJECTIVE</h3>
+            <h3 className="section-title">OBJETIVO PROFESIONAL</h3>
             <p>
                 Como ingeniero en sistemas egresado de la UPTLL, mi objetivo es aplicar mis habilidades y conocimientos en el campo de la tecnología de la información, enfocándome en contribuir al desarrollo y promoción del software libre. Con una sólida experiencia tanto en empresas locales como en proyectos como freelancer, deseo ahora embarcarme en desafiantes proyectos importantes, donde pueda emplear nuevas tecnologías y expandir mis habilidades como programador.
             </p>
@@ -21,7 +21,7 @@ export default function Body() {
 
 
         <section className="cristal">
-            <h3 className="section-title">EDUCATION</h3>
+            <h3 className="section-title">EDUCACIÓN</h3>
             <ul>
                 <li>
                     Ingeniero en Sistemas, especialidad en desarrollo de software
@@ -43,9 +43,9 @@ export default function Body() {
         </section>
 
         <section className="cristal">
-            <h3 className="section-title">WORK EXPERIENCE</h3>
+            <h3 className="section-title">EXPERIENCIA LABORAL</h3>
             <ul>
-                <li>U.E.C. Batalla de la Victoria</li>
+                <li><strong>U.E.C. Batalla de la Victoria</strong></li>
                 Desarrollo de un sistema de gestión de calificaciones e inscripción de estudiantes, que incluía los siguientes componentes:
                 <ol>
                     <li>
@@ -61,17 +61,20 @@ export default function Body() {
                         Aplicación para Android desarrollada con Kotlin.
                     </li>
                 </ol>
-                <li>U.E. Abelardo Méndez</li>
+                <br />
+                <li><strong>U.E. Abelardo Méndez</strong></li>
                 Desarrollo de un sistema de registro de asistencias, implementado en Java y haciendo uso de un lector de huellas dactilares.
-                <li>Hidrocapital</li>
+                <br />
+                <li><strong>Hidrocapital</strong></li>
                 Desarrollo de un sistema de monitoreo de equipos hidráulicos, que involucraba la obtención de información proveniente de múltiples sensores en diversos equipos. El sistema emitía alarmas en caso de situaciones que lo requirieran y también generaba alertas para indicar la falta de mantenimiento.
-                <li>Desarrollo de múltiples páginas web para diversos clientes locales.</li>
+                <br />
+                <li><strong>Desarrollo de múltiples páginas web para diversos clientes locales.</strong></li>
             </ul>
 
         </section>
 
         <section className="cristal">
-            <h3 className="section-title">RELEVANT COURSES</h3>
+            <h3 className="section-title">CURSOS RELEVANTES</h3>
             <ul>
                 <li>
                     Curso de HTML y CSS, Platzi

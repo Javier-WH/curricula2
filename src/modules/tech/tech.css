@@ -4,8 +4,8 @@
 }
 
 #tech-container {
-    height: 8vw;
-    min-height: 60px;
+    height: 9.5vw;
+    min-height: 70px;
     margin-top: 10px;
     display: flex;
     column-gap: 5%;
@@ -15,7 +15,7 @@
     margin: auto;
     position: relative;
     width: 100%;
-    z-index: -2;
+    z-index: 0;
 }
 
 .tech-item {
@@ -24,6 +24,7 @@
     align-items: center;
     background-color: transparent;
     color: white;
+
 }
 
 .tech-logo {
@@ -44,6 +45,9 @@
 
 .slide-track {
     margin-top: 1px;
+    margin-bottom: 1px;
+    padding-top: 1vw;
+
 }
 
 .slider .slide-track {
@@ -55,11 +59,24 @@
 
 .slider .slide-track:hover {
     animation-play-state: paused;
+
 }
 
+.slider .slide-track:hover .slide:hover {
+    color: transparent;
+  
+}
+
+.slider .slide-track:hover .slide:hover .tech-logo {
+    transform: scale(1.4);
+  
+}
+
+
+
 .slider .slide {
-    height: var(--itemSize) ;
-    width: var(--itemSize) ;
+    height: auto;
+    width: var(--itemSize);
 }
 
 
@@ -71,4 +88,32 @@
     100% {
         transform: translateX(calc((var(--itemSize) * -1)* (var(--NumItems)/2)));
     }
+}
+
+
+
+.tech-item[name] {
+    position: relative;
+}
+
+.tech-item:hover::after {
+    content: attr(name);
+    position: absolute;
+    bottom: -0.15vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    font-size: max(1vw, 10px);
+}
+
+.tech-item:hover::after {
+    opacity: 1;
+    visibility: visible;
 }
