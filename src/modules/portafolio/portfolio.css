@@ -1,0 +1,23 @@
+#Portfolio-button {
+    z-index: 100;
+    text-decoration: none;
+    font-size: max(1.2vw, 10px);
+    display: flex;
+    align-items: center;
+    background-color: var(--BG-Color);
+    width: 10vw;
+    min-width: 80px;
+    color: white;
+    justify-content: center;
+    padding: 0.3vw;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+
+}
+
+#portfolio-icon{
+    width: 2vw;
+    min-width: 15px !important;
+    height: auto;
+    margin-right: 1vw;
+}
+
